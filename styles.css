@@ -12,6 +12,7 @@ header{
 footer{
 height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
+    margin: 0;
    
   
    
@@ -29,6 +30,7 @@ height: 61px;
 }
 
 .rubrik{
+    margin-top: 20px;
     font-family: monospace;
     font-size: 3rem;
     
@@ -49,7 +51,9 @@ body{
 }
 
 
-
+.card{
+    margin: 
+}
 
 
 
@@ -71,7 +75,11 @@ body{
 
 }
 .img-fluid{
-    border-radius: 1rem;
+    border-radius: 1rem; 
+}
+
+.border-primary{
+    backdrop-filter: blur(1rem);
 }
 
 
