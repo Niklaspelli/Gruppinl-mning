@@ -17,7 +17,7 @@ header{
 footer{
     height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
-    margin: 0;
+    margin-top: 40px;
 
 }
 
@@ -47,8 +47,8 @@ footer{
 
 /* Allt ovanför det här är startsidans CSS!! */
 
-.col-sm-4{
-    
+.card-content{
+   
     background-color: rgba(138, 73, 168, 0.2);
     border-radius: 5%;
     border: 1px solid transparent;
@@ -63,8 +63,4 @@ footer{
     backdrop-filter: blur(1rem);
 }
 
-.blockquote-footer{
-    
-    margin-bottom: 70px;
-   
-}
+
