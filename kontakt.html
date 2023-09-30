@@ -8,7 +8,7 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="styles.css"/>
-    
+    <script src="script.js"></script>
   
     <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -33,7 +33,7 @@
          
           <button class="navbar-toggler" data-bs-toggle="collapse" 
           data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
-        <div class="navbar-toggler-icon"></div>
+        <span class="navbar-toggler-icon"></span>
       </button>
        <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav">
@@ -50,60 +50,69 @@
             <a href="kontakt.html" class="nav-link active" aria-current="page">Om oss/Kontakt</a>
            </li>
            <li class="nav-item">
-            <a href="#" class="nav-link">Jobba hos oss</a>
+            <a href="jobba.html" class="nav-link">Jobba hos oss</a>
            </li>
           </ul>
         </div>
-
         </div>
       </nav>
-
-    </div>
-  </div>
  
-  
-
-
   <h1 class="h1 text-sm-center fs-1 p-3">Kontakta oss!</h1>
 
   <!-- Wrapper container -->
-<div class="container py-4">
+  <div class="container border-2 rounded text-white align-content-center justify-content-center">
+   <div class="row">
+    <div class="col position-relative">
+    
+   
+    
 
   <!-- Bootstrap 5 starter form -->
   <form id="contactForm">
 
     <!-- Name input -->
-    <div class="mb-3">
+    <div class="mb-3 ">
       <label class="form-label text-white" for="name">Namn</label>
-      <input class="form-control" id="name" type="text" placeholder="Name" />
+      <input class="form-control card-content" id="name" type="text" placeholder="Namn" />
     </div>
 
     <!-- Email address input -->
     <div class="mb-3">
       <label class="form-label text-white" for="emailAddress">E-mail Adress</label>
-      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+      <input class="form-control card-content" id="emailAddress" type="email" placeholder="Email Address" />
     </div>
 
     <!-- Message input -->
     <div class="mb-3">
       <label class="form-label text-white" for="message">Meddelande</label>
-      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+      <textarea class="form-control card-content" id="message" type="text" placeholder="Meddelande" style="height: 10rem;"></textarea>
     </div>
 
     <!-- Form submit button -->
     <div class="d-grid">
-      <button class="btn btn-dark btn-lg" type="submit">Skicka</button>
+      <button class="btn btn-dark btn-lg card-content mb-5" type="submit" onclick="myFunction()">Skicka</button>
     </div>
-
-  </form>
-
 </div>
-    
-
+  </form>
+   
  
 
- <footer class="fixed-bottom"></footer>
- </div>
+
+<div class="col-sm-5 position-relative-right m-lg-4 card-content p-5">
+<p class="lead">Bankheist AB</p>
+    <p>Paintballvägen 35</p>
+    <p>12345 Ankeborg</p>
+    <p>Org:nr xxxxxxxxx-xx</p>
+   
+    <div id="map-container-google-1"  style="height: 200px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4830.113281894261!2d17.944940224379252!3d59.40284112550492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6db302726b%3A0xf29c835228dcf386!2sJENSEN%20yrkesh%C3%B6gskola%20Stockholm!5e0!3m2!1ssv!2sus!4v1695930518932!5m2!1ssv!2sus" width="300" height="200"></iframe>
+       </div>
+    </div>
+  </div>
+</div>   
+
+ <footer></footer>
+
 
    </body>
 

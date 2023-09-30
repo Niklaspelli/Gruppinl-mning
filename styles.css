@@ -17,7 +17,7 @@ header{
 footer{
     height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
-    margin: 0;
+    margin-top: 40px;
 
 }
 
@@ -30,8 +30,6 @@ footer{
 .h1{
     margin-top: 15vh;
     font-family: monospace;
-    
-    
     text-align: center;
     color: cyan;
     text-shadow: 0 0 6px;
@@ -45,26 +43,42 @@ footer{
 
 
 
-/* Allt efter det här är startsidans CSS!! */
+/* Allt ovanför det här är startsidans CSS!! */
 
-.col-sm-4{
-    
+.card-content{
+   
     background-color: rgba(138, 73, 168, 0.2);
     border-radius: 5%;
     border: 1px solid transparent;
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0, 0.5);
     backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);  above backdrop-filter snippet
-    
-
+    -webkit-backdrop-filter: blur(1rem); 
 }
 
 .border-primary{
     backdrop-filter: blur(1rem);
 }
 
-.blockquote-footer{
-    
-    margin-bottom: 70px;
-   
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
 }
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
