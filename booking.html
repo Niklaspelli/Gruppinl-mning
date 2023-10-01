@@ -159,7 +159,9 @@
               value=""
               id="checkbox1"
             />
-            <label class="form-check-label" for="checkbox1">Alternativ 1</label>
+            <label class="form-check-label" for="checkbox1"
+              >Två Extra Magasin - 299kr</label
+            >
           </div>
           <div class="form-check col-md-3">
             <input
@@ -168,7 +170,9 @@
               value=""
               id="checkbox2"
             />
-            <label class="form-check-label" for="checkbox2">Alternativ 2</label>
+            <label class="form-check-label" for="checkbox2"
+              >Handgranater - 499kr</label
+            >
           </div>
           <div class="form-check col-md-3">
             <input
@@ -177,7 +181,9 @@
               value=""
               id="checkbox3"
             />
-            <label class="form-check-label" for="checkbox3">Alternativ 3</label>
+            <label class="form-check-label" for="checkbox3"
+              >Realistiska Vapen - 499kr</label
+            >
           </div>
           <div class="form-check col-md-3">
             <input
@@ -186,14 +192,32 @@
               value=""
               id="checkbox4"
             />
-            <label class="form-check-label" for="checkbox4">Alternativ 4</label>
+            <label class="form-check-label" for="checkbox4"
+              >Ballistisk Väst - 299kr</label
+            >
           </div>
         </div>
-        <!-- TA BORT FÖR VERTIKAL LINJERING-->
+        <!-- TA BORT FÖR VERTIKAL LINJERING /DIV ovan-->
+        <!--Order Date-->
+        <div class="col-6">
+          <div class="form-outline datepicker" data-mdb-toggle-button="false">
+            <input
+              type="date"
+              class="form-control order-form-input"
+              id="datepicker"
+              data-mdb-toggle="datepicker"
+            />
+            <label for="datepicker" class="form-label">Välj Datum</label>
+          </div>
+        </div>
         <!--Message Box / Requests-->
 
         <!--Submit button-->
+        <button class="btn btn-dark" type="submit" onclick="myOrder()">
+          Beställ
+        </button>
       </form>
     </div>
+    <footer>HejHej</footer>
   </body>
 </html>
