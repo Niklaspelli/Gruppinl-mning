@@ -1,7 +1,7 @@
-  function myFunction() {
+/*   function myFunction() {
 alert("Tack för ditt mail! Vi kommer snart att kontakta dig."); 
     location.replace(location.href);
-  }
+  } */
 
 
 
@@ -14,11 +14,11 @@ alert("Tack för ditt mail! Vi kommer snart att kontakta dig.");
 /*     */
   
 
-/* let popup = document.getElementById("popup");
+let popup = document.getElementById("exampleModalLabel");
 
 function openPopup(){
     popup.classList.add("open-popup");
 }
 function closePopup(){
     popup.classList.remove("open-popup");
-} */
+}
