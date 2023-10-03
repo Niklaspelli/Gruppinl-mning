@@ -17,7 +17,9 @@ header{
 footer{
     height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
-    margin-top: 40px;
+    margin-top: 30px;
+
+width: 100%;
 
 
 }
@@ -37,13 +39,6 @@ footer{
 }
 
 
-
-:root {
-     --bs-body-bg: red;
-}
-
-
-
 /* Allt ovanför det här är startsidans CSS!! */
 
 .card-content{
@@ -60,5 +55,16 @@ footer{
     backdrop-filter: blur(1rem);
 }
 
-
-
+.fa-brands{
+    font-size:2.5rem; 
+    text-align: center;  
+    left:50%;   
+}
+.fa-brands:hover{
+   
+    transform:scale(1.2);                           
+}
+.fontawesome{
+    text-align: center; 
+    
+}
