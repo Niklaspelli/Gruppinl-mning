@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,7 +70,7 @@
     <!--Bokningsformulär-->
     <h1 class="h1 text-sm-center fs-1 p-3">Bokningsforumlär</h1>
     <!--Order Section-->
-    <div class="container border-primary text-white">
+    <div class="container text-white card-content p-4">
       <!--Name & Adress -->
       <form class="row g-3">
         <div class="col-md-6">
@@ -110,11 +110,11 @@
             type="text"
             class="form-control"
             id="Adress"
-            placeholder="Ex. MinGata 12"
+            placeholder="Ex. Min Gata 12"
           />
         </div>
         <div class="col-md-6">
-          <label for="City" class="form-label">Stad:</label>
+          <label for="City" class="form-label">Postort:</label>
           <input
             type="text"
             class="form-control"
@@ -149,55 +149,17 @@
             placeholder="Ex. 072-123 45 67"
           />
         </div>
-        <!--Xtra Choices-->
-        <div class="justify-content-center">
-          <!-- TA BORT FÖR VERTIKAL LINJERING-->
-          <div class="form-check col-md-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="checkbox1"
-            />
-            <label class="form-check-label" for="checkbox1"
-              >Två Extra Magasin - 299kr</label
-            >
-          </div>
-          <div class="form-check col-md-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="checkbox2"
-            />
-            <label class="form-check-label" for="checkbox2"
-              >Handgranater - 499kr</label
-            >
-          </div>
-          <div class="form-check col-md-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="checkbox3"
-            />
-            <label class="form-check-label" for="checkbox3"
-              >Realistiska Vapen - 499kr</label
-            >
-          </div>
-          <div class="form-check col-md-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="checkbox4"
-            />
-            <label class="form-check-label" for="checkbox4"
-              >Ballistisk Väst - 299kr</label
-            >
-          </div>
+        <!--Number of players-->
+        <div class="col-6">
+          <select class="form-select" id="players">
+            <option selected>Antal deltagare</option>
+            <option value="2">2 st Deltagare - 1200kr</option>
+            <option value="3">3 st Deltagare - 1500kr</option>
+            <option value="4">4 st Deltagare - 1900kr</option>
+            <option value="5">5 st Deltagare - 2300kr</option>
+          </select>
+          <label for="players" class="form-label">Välj antal deltagare</label>
         </div>
-        <!-- TA BORT FÖR VERTIKAL LINJERING /DIV ovan-->
         <!--Order Date-->
         <div class="col-6">
           <div class="form-outline datepicker" data-mdb-toggle-button="false">
@@ -210,14 +172,75 @@
             <label for="datepicker" class="form-label">Välj Datum</label>
           </div>
         </div>
-        <!--Message Box / Requests-->
+        <!--Extra Choices-->
+        <div class="check-container col-12">
+          <p>
+            * Extra tillval för ett mer realistiskt scenario. Alla tillval
+            gäller för samtliga deltagare.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="checkbox1"
+            />
+            <label class="form-check-label" for="checkbox1"
+              >Två Extra Magasin - 299kr per person</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="checkbox2"
+            />
+            <label class="form-check-label" for="checkbox2"
+              >Handgranater - 499kr per person</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="checkbox3"
+            />
+            <label class="form-check-label" for="checkbox3"
+              >Realistiska Vapen - 499kr per person</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="checkbox4"
+            />
+            <label class="form-check-label" for="checkbox4"
+              >Ballistisk Väst - 299kr per person</label
+            >
+          </div>
+        </div>
 
+        <!-- TA BORT FÖR VERTIKAL LINJERING /DIV ovan-->
+
+        <!--Message Box / Requests-->
+        <div class="col-12">
+          <label for="messagebox" class="form-label"
+            >Övriga upplysningar / Önskemål:</label
+          >
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" id="messagebox"></textarea>
+        </div>
         <!--Submit button-->
         <button class="btn btn-dark" type="submit" onclick="myOrder()">
           Beställ
         </button>
       </form>
     </div>
-    <footer>HejHej</footer>
+    <footer></footer>
   </body>
 </html>
