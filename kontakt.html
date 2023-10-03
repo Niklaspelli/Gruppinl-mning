@@ -61,46 +61,25 @@
   <div class="container border-2 rounded text-white align-content-center justify-content-center">
    <div class="row">
     <div class="col position-relative">
-    
-   
-    
-
-  
-  <form id="contactForm">
-
-
-    <div class="mb-3 ">
-      <label class="form-label text-white" for="name">Namn</label>
-      <input class="form-control card-content" id="name" type="text" placeholder="Namn" required/>
-    </div>
-
-   
+      <form id="contactForm" class="border-primary p-2">
+        <div class="mb-3">
+          <label class="form-label text-white" for="name">Namn</label>
+            <input class="form-control" id="name" type="text" placeholder="Namn" required/>
+             </div>
+              <div class="mb-4">
+                <label class="form-label text-white" for="emailAddress">E-mail</label>
+                  <input class="form-control" id="emailAddress" type="email" placeholder="E-mail" required/>
+                    </div>
     <div class="mb-3">
-      <label class="form-label text-white" for="emailAddress">E-mail</label>
-      <input class="form-control card-content" id="emailAddress" type="email" placeholder="E-mail" required />
-    </div>
-
-  
-    <div class="mb-3">
-      <label class="form-label text-white" for="message">Meddelande</label>
-      <textarea class="form-control card-content" id="message" type="text" placeholder="Meddelande" style="height: 10rem;" required></textarea>
-    </div>
-
-    
-    <div class="d-grid">
-  <button class="btn btn-dark btn-lg card-content mb-5" type="submit" onclick="myFunction()" >Skicka</button>
-
-
-  
-  
-    </div>
-</div>
-  </form>
-
- 
-
-
-<div class="col-sm-5 position-relative-right m-lg-4 card-content p-5">
+     <label class="form-label text-white" for="message">Meddelande</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Skriv ditt meddelande..." style="height: 10rem;" required></textarea>
+          </div>
+            <div class="d-grid">
+               <button class="btn btn-dark btn-lg mb-3" type="submit" onclick="myFunction()">Skicka</button>
+                </div>
+                  </div>
+                    </form>
+<div class="col-sm-4 position-relative-right m-lg card-content p-4">
 <p class="lead">Bankheist AB</p>
     <p>Paintballvägen 35</p>
     <p>12345 Ankeborg</p>
@@ -114,10 +93,6 @@
 </div>   
 
 
-
-
 <footer></footer>
-
 </body>
-
 </html>
