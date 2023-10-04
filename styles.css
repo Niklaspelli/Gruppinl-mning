@@ -15,7 +15,8 @@ header {
 footer{
     height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
-    margin-top: 30px;
+    margin-top: 150px;
+    margin-bottom: 0;
 
 width: 100%;
 
@@ -27,7 +28,7 @@ width: 100%;
   color: rgb(247, 244, 244);
 }
 
-.h1 {
+.h1 .h4 {
   margin-top: 15vh;
   font-family: monospace;
   text-align: center;
