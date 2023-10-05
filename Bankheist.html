@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bank Heist</title>
+    <title>Bank Heist Paintball AB</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -18,19 +17,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-
     <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="script.js"></script>
     <!-- Bootstraps egen JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script
       src="https://kit.fontawesome.com/7463f6cb61.js"
       crossorigin="anonymous"
@@ -43,7 +37,7 @@
       class="sticky-md-top navbar-expand-md navbar-dark bg-black m-6 fixed-top"
     >
       <div class="container">
-        <h2 class="h2 ml-2">The Bankheist Paintball</h2>
+        <h2 class="h2 ml-2">Bank Heist Paintball</h2>
 
         <button
           class="navbar-toggler"
@@ -86,17 +80,16 @@
       <div class="col-sm-1"></div>
       <div class="g-5 col-md-6 card-content p-4 text-white">
         <h5>Uppdraget:</h5>
-        <p id="Infotext">
+        <p>
           Ett team på 3-5 personer kommer att bli rånare som ska ta pengar ur en
           bank. I banken kommer det att patrullera vakter, som har sina fasta
           rutter och får INTE avvika från dem om de inte ser något misstänksamt.
           Vakterna i banken kommer aldrig få reda på när och var ni ska slå
           till. Så ni har “The element of surprise". Ert mål är enkelt. Inom 60
           min ska ni övermanna vakterna med hjälp av de verktyg ni får innan
-          vakterna hinner slå larm, dvs med handklovar och paintballvapen. Hitta
-          koden till bankvalvet för att slå av larmet, ta ut väskorna från
-          banken och transportera dem från position A till B med hjälp av
-          transportmedel.
+          vakterna hinner slå larm. Hitta koden till bankvalvet för att slå av
+          larmet, ta ut väskorna från banken och transportera dem från position
+          A till B med hjälp av transportmedel.
           <br />
           <br />
           MEN!!! ja det finns ett stort men, om något larm aktiveras från
@@ -133,7 +126,7 @@
       </div>
       <div class="col gx-5"></div>
       <div class="col-md-4 g-5">
-        <div class="card-content p-4 pl-5 p-sm-3" id="buttons">
+        <div class="card-content p-4 pl-5 p-sm-3">
           <div class="ml-3">
             <button
               class="btn btn-dark btn-lg"
@@ -272,13 +265,18 @@
             class="fa-brands p-1"
             target="_blank"
           >
-            <i class="fa-brands fa-facebook" style="color: #f7f7f7"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="Http://www.instagram.com" class="fa-brands" target="_blank">
-            <i class="fa-brands fa-instagram" style="color: #f7f7f7"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
     </footer>
   </body>
 </html>
+<!-- Validering är ok, dock mycket info pga Prettier. Vi har arbetat framförallt med
+class då majorieten css kod är länkat på alla sidor. Vi har byggt upp sidan på bootstrap
+och försöker att göra mindre i css och mer i html, mer för att lära sig hur
+bootstrap fungera och hur mycket du kan undvika css med positionering och det
+responsivitet. -->
