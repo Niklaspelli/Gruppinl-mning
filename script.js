@@ -14,3 +14,5 @@ function mySend() {
   alert("Tack för din ansökan. Vi kontaktar dig inom en snar framtid.");
   location.replace(location.href);
 }
+
+// Gjort av Simon
