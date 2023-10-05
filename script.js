@@ -5,7 +5,7 @@ function myOrder() {
   location.replace(location.href);
 }
 function myMessage() {
-  alert("Ett annat meddelanden.");
+  alert("Tack för ditt mejl!");
   location.replace(location.href);
 }
 function NoNameJohan() {

@@ -3,26 +3,19 @@ body {
   background-size: cover;
   color: white;
 }
-
 header {
   background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
   top: 0;
   margin: 0;
   border: black solid 2px;
 }
-
-
 footer{
     height: 61px;
     background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
     margin-top: 150px;
     margin-bottom: 0;
-
-width: 100%;
-
-
+    width: 100%;
 }
-
 .h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(247, 244, 244);
@@ -35,10 +28,6 @@ width: 100%;
   color: cyan;
   text-shadow: 0 0 6px;
 }
-
-
-/* Allt ovanför det här är startsidans CSS!! */
-
 .card-content{
    
     background-color: rgba(138, 73, 168, 0.2);
@@ -46,24 +35,28 @@ width: 100%;
     border: 1px solid transparent;
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0, 0.5);
     backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-     
+    -webkit-backdrop-filter: blur(1rem);     
 }
-
 .border-primary {
   backdrop-filter: blur(1rem);
 }
-
 .fa-brands{
     font-size:2.5rem; 
     text-align: center;  
     left:50%;   
 }
-.fa-brands:hover{
-   
+.fa-brands:hover{   
     transform:scale(1.2);                           
 }
 .fontawesome{
-    text-align: center; 
-    
+    text-align: center;    
+}
+
+i{
+  color: white;
+
+}
+
+img{
+  border-radius: 10px;
 }
