@@ -11,16 +11,12 @@ header {
   border: black solid 2px;
 }
 
-
-footer{
-    height: 61px;
-    background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
-    margin-top: 150px;
-    margin-bottom: 0;
-
-width: 100%;
-
-
+footer {
+  height: 61px;
+  background-image: linear-gradient(rgb(42, 4, 87), rgb(129, 9, 129), black);
+  margin-top: 150px;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .h2 {
@@ -28,7 +24,8 @@ width: 100%;
   color: rgb(247, 244, 244);
 }
 
-.h1, .h4 {
+.h1,
+.h4 {
   margin-top: 15vh;
   font-family: monospace;
   text-align: center;
@@ -36,34 +33,29 @@ width: 100%;
   text-shadow: 0 0 6px;
 }
 
-
 /* Allt ovanför det här är startsidans CSS!! */
 
-.card-content{
-   
-    background-color: rgba(138, 73, 168, 0.2);
-    border-radius: 5%;
-    border: 1px solid transparent;
-    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0, 0.5);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-     
+.card-content {
+  background-color: rgba(138, 73, 168, 0.2);
+  border-radius: 5%;
+  border: 1px solid transparent;
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 }
 
 .border-primary {
   backdrop-filter: blur(1rem);
 }
 
-.fa-brands{
-    font-size:2.5rem; 
-    text-align: center;  
-    left:50%;   
+.fa-brands {
+  font-size: 2.5rem;
+  text-align: center;
+  left: 50%;
 }
-.fa-brands:hover{
-   
-    transform:scale(1.2);                           
+.fa-brands:hover {
+  transform: scale(1.2);
 }
-.fontawesome{
-    text-align: center; 
-    
+.fontawesome {
+  text-align: center;
 }

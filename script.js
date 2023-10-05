@@ -5,11 +5,11 @@ function myOrder() {
   location.replace(location.href);
 }
 function myMessage() {
-  alert("Ett annat meddelanden.");
+  alert("Tack för ditt mail. Vi svarar inom 24tim alla vardagar.");
   location.replace(location.href);
 }
 function mySend() {
-  alert("Ett annat meddelanden igen.");
+  alert("Tack för din ansökan. Vi kontaktar dig inom en snar framtid.");
   location.replace(location.href);
 }
 
