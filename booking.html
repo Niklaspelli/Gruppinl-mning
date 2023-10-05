@@ -22,10 +22,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!--Icons-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstraps egen JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <nav
@@ -212,7 +214,6 @@
           <div class="form-check">
             <input
               class="form-check-input"
-              readonly
               type="checkbox"
               value=""
               id="checkbox4"
@@ -259,8 +260,14 @@
       src="https://kit.fontawesome.com/7463f6cb61.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!--Custom JS for Buttons-->
     <script src="script.js"></script>
+    <!-- Kommentarer:
+      Denna sida är gjord av Simon Hällström. 
+      Prettier orsakar endel info-kommentarer i validator men inga fel/varningar.
+      Ett misstag har gjorts vid grund layouten, då flera lika men olika script/css filer
+      från bootstrap inropats. Både bootstrap version 4 & 5. Det orsakar inga fel i layouten
+      eller koden förutom om vi tar bort någon av link/script länkarna.
+    -->
   </body>
 </html>
