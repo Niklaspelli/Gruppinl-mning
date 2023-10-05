@@ -8,7 +8,7 @@ function myMessage() {
   alert("Ett annat meddelanden.");
   location.replace(location.href);
 }
-function NoNameJohan() {
+function mySend() {
   alert("Ett annat meddelanden igen.");
   location.replace(location.href);
 }
