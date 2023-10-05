@@ -10,6 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -17,14 +18,17 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+
     <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="script.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstraps egen JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/7463f6cb61.js"
       crossorigin="anonymous"
@@ -76,181 +80,189 @@
     </nav>
 
     <h1 class="h1 text-sm-center fs-1 p-3">Upplägg och info!</h1>
-    <div class="container px-5 row gx-4 ml-5">
-      <div class="col-sm-1"></div>
-      <div class="g-5 col-md-6 card-content p-4 text-white">
-        <h5>Uppdraget:</h5>
-        <p>
-          Ett team på 3-5 personer kommer att bli rånare som ska ta pengar ur en
-          bank. I banken kommer det att patrullera vakter, som har sina fasta
-          rutter och får INTE avvika från dem om de inte ser något misstänksamt.
-          Vakterna i banken kommer aldrig få reda på när och var ni ska slå
-          till. Så ni har “The element of surprise". Ert mål är enkelt. Inom 60
-          min ska ni övermanna vakterna med hjälp av de verktyg ni får innan
-          vakterna hinner slå larm. Hitta koden till bankvalvet för att slå av
-          larmet, ta ut väskorna från banken och transportera dem från position
-          A till B med hjälp av transportmedel.
-          <br />
-          <br />
-          MEN!!! ja det finns ett stort men, om något larm aktiveras från
-          vakterna eller bankvalvet kommer banken att stormas av vårt eget
-          specialutbildade S.W.A.T team. Dessa kommer göra allt i sin makt för
-          att ni ska misslyckas med ert uppdrag. Om larmet går tar det 5-10 min
-          innan S.W.A.T teamet är på plats Då har ni 2 alternativ, ta så mycket
-          som möjligt ur banken, eller försöka förbereda er på en riktig “shoot
-          out”. Om ni har taktik och samarbete kan ni kanske ni till och med
-          lyckas att få ner S.W.A.T teamet.
-          <br />
-          <br />
-          Ni misslyckas med ert uppdrag genom att alla i teamet antingen blir
-          skjutna eller att tiden går ut.
-          <br />
-          <br />
-          Vi tillhandahåller information, hur ni väljer att göra med den är helt
-          upp till er. Loud eller Stealth
-          <br />
-          <br />
-        </p>
-        <h5>Upplägg och planering:</h5>
-        <p>
-          Efter en bekräftad bokning kommer du och ditt team få ett mail med all
-          information ni behöver för att lyckas, mailet kommer ca 1-2 veckor
-          innan er tid, detta för att ge er tid att planera. Banken kommer ha
-          totalt 15 st olika ingångar, men bara 3-5 ingångar kommer vara öppna
-          för er, antalet ingångar är baserat på hur många ni är. Ni kommer få
-          en ritning av banken där det står vilka ingångar som ni har tillgång
-          till, samt rutter och tider som vakterna patrullerar. Ni kommer även
-          få information om spelreglerna och vilken utrustning som kommer vara
-          till ert förfogande.
-        </p>
-      </div>
-      <div class="col gx-5"></div>
-      <div class="col-md-4 g-5">
-        <div class="card-content p-4 pl-5 p-sm-3">
-          <div class="ml-3">
-            <button
-              class="btn btn-dark btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#modal"
-            >
-              Se utrustning här!
-            </button>
-          </div>
-          <div class="col mt-5">
-            <button
-              class="btn btn-dark btn-lg btn-sm-small"
-              data-bs-toggle="modal"
-              data-bs-target="#modal1"
-            >
-              Säkerhet!
-            </button>
-          </div>
-          <div class="col mt-5">
-            <button
-              class="btn btn-dark btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#modal2"
-            >
-              Regler & Policy
-            </button>
-          </div>
+    <div class="container">
+      <div class="row align-text">
+        <div class="g-5 col-md-6 card-content p-4 text-white">
+          <h5>Uppdraget:</h5>
+          <p>
+            Ett team på 3-5 personer kommer att bli rånare som ska ta pengar ur
+            en bank. I banken kommer det att patrullera vakter, som har sina
+            fasta rutter och får INTE avvika från dem om de inte ser något
+            misstänksamt. Vakterna i banken kommer aldrig få reda på när och var
+            ni ska slå till. Så ni har “The element of surprise". Ert mål är
+            enkelt. Inom 60 min ska ni övermanna vakterna med hjälp av de
+            verktyg ni får innan vakterna hinner slå larm. Hitta koden till
+            bankvalvet för att slå av larmet, ta ut väskorna från banken och
+            transportera dem från position A till B med hjälp av transportmedel.
+            <br />
+          </p>
+
+          <p>
+            <b>MEN!</b> Ja det finns ett stort men, om något larm aktiveras från
+            vakterna eller bankvalvet kommer banken att stormas av vårt eget
+            specialutbildade S.W.A.T team. Dessa kommer göra allt i sin makt för
+            att ni ska misslyckas med ert uppdrag. Om larmet går tar det 5-10
+            min innan S.W.A.T teamet är på plats Då har ni 2 alternativ, ta så
+            mycket som möjligt ur banken, eller försöka förbereda er på en
+            riktig “shoot out”. Om ni har taktik och samarbete kan ni kanske ni
+            till och med lyckas att få ner S.W.A.T teamet. <br />
+          </p>
+
+          <p>
+            Ni misslyckas med ert uppdrag genom att alla i teamet antingen blir
+            skjutna eller att tiden går ut. <br />
+          </p>
+
+          <p>
+            Vi tillhandahåller information, hur ni väljer att göra med den är
+            helt upp till er. Loud eller Stealth
+            <br />
+          </p>
+          <h5>Upplägg och planering:</h5>
+          <p>
+            Efter en bekräftad bokning kommer du och ditt team få ett mail med
+            all information ni behöver för att lyckas, mailet kommer ca 1-2
+            veckor innan er tid, detta för att ge er tid att planera. Banken
+            kommer ha totalt 15 st olika ingångar, men bara 3-5 ingångar kommer
+            vara öppna för er, antalet ingångar är baserat på hur många ni är.
+            Ni kommer få en ritning av banken där det står vilka ingångar som ni
+            har tillgång till, samt rutter och tider som vakterna patrullerar.
+            Ni kommer även få information om spelreglerna och vilken utrustning
+            som kommer vara till ert förfogande.
+          </p>
         </div>
-        <div class="modal fade" id="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5>I er bokning kommer en standardutrustning att ingå!</h5>
-              </div>
-              <div class="modal-body">
-                <ul>
-                  <li>En skyddande overall.</li>
-                  <li>En skyddshjälm med inbyggd kommunikationsutrustning.</li>
-                  <li>Handskar.</li>
-                  <li>Skyddsskor.</li>
-                  <li>Ett par handklovar</li>
-                  <li>Ett paintballgevär med 30 kulor</li>
-                </ul>
-                <br />
-                Där finns en del tillval man kan välja till på
-                <a href="booking.html">bokningssidan.</a>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-dark" data-bs-dismiss="modal">
-                  Stäng
-                </button>
+
+        <div class="col-md-3 g-5">
+          <div class="card-content p-4 pl-5 p-sm-3" id="button">
+            <div class="ml-3">
+              <button
+                class="btn btn-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+              >
+                Se utrustning här!
+              </button>
+            </div>
+            <div class="col mt-5">
+              <button
+                class="btn btn-dark btn-lg btn-sm-small"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                Säkerhet!
+              </button>
+            </div>
+            <div class="col mt-5">
+              <button
+                class="btn btn-dark btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                Regler & Policy
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5>I er bokning kommer en standardutrustning att ingå!</h5>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>En skyddande overall.</li>
+                    <li>
+                      En skyddshjälm med inbyggd kommunikationsutrustning.
+                    </li>
+                    <li>Handskar.</li>
+                    <li>Skyddsskor.</li>
+                    <li>Ett par handklovar</li>
+                    <li>Ett paintballgevär med 30 kulor</li>
+                  </ul>
+                  <br />
+                  Där finns en del tillval man kan välja till på
+                  <a href="booking.html">bokningssidan.</a>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-dismiss="modal">
+                    Stäng
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal fade" id="modal1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5>Säkerhet</h5>
-              </div>
-              <div class="modal-body">
-                Ni är vårt ansvar, vi arbetar ständigt med att skapa en rolig
-                och säker miljö för våra kunder. I lokalerna finns
-                kameraövervakning för er och vår säkerhet.
-                <br />All vår personal är utbildade i hjärt- och lungräddning
-                och brandsäkerhet. I alla våra lokaler finns brandsläckare,
-                första hjälpen och hjärtstartare installerade som ständigt
-                kontrolleras. Har ni frågor ska ni känna er trygga att ställa
-                dem. <br />Innan ert uppdrag kommer ni behöva skriva på ett
-                avtal om vilka förhållningsregler som gäller och som kommer vara
-                ert ansvar att följa. Dessa regler kommer även att skickas med i
-                eran bokningsbekräftelse.
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-dark" data-bs-dismiss="modal">
-                  Stäng
-                </button>
+          <div class="modal fade" id="modal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5>Säkerhet</h5>
+                </div>
+                <div class="modal-body">
+                  Ni är vårt ansvar, vi arbetar ständigt med att skapa en rolig
+                  och säker miljö för våra kunder. I lokalerna finns
+                  kameraövervakning för er och vår säkerhet.
+                  <br />All vår personal är utbildade i hjärt- och lungräddning
+                  och brandsäkerhet. I alla våra lokaler finns brandsläckare,
+                  första hjälpen och hjärtstartare installerade som ständigt
+                  kontrolleras. Har ni frågor ska ni känna er trygga att ställa
+                  dem. <br />Innan ert uppdrag kommer ni behöva skriva på ett
+                  avtal om vilka förhållningsregler som gäller och som kommer
+                  vara ert ansvar att följa. Dessa regler kommer även att
+                  skickas med i eran bokningsbekräftelse.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-dismiss="modal">
+                    Stäng
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal fade" id="modal2">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">Regler och Policy</div>
-              <div class="modal-body">
-                Vi har en del regler som man ska förhålla sig till för allas
-                trevnad och säkerhet.
-                <br />
-                <br />
-                <ul>
-                  <li>18 årsgräns för alla heists hos oss</li>
-                  <li>
-                    Ert heists är övervakat av en supervisor som har
-                    direktkontakt med era hjälmar. Om ni får ett direktiv måste
-                    ni alltid följa det.
-                  </li>
-                  <li>
-                    Från det att ni går in i banken fram tills att ni är klara
-                    MÅSTE skyddsutrustningen alltid bäras korrekt.
-                  </li>
-                  <li>Vi har nolltolerans för hat och fysiskt våld.</li>
-                  <li>
-                    När man har blivit träffad måste man högt och tydligt skrika
-                    TRÄFF och räcka upp den hand som vapnet hålls i. Då är du
-                    “död” och måste direkt lämna banken till angiven plats.
-                  </li>
-                  <li>Man får inte fortsätta skjuta någon som är “död”.</li>
-                </ul>
-                Om någon av dessa regler bryts har vår personal rätt att avbryta
-                ert uppdrag, då dessa kan leda till en direkt fara för både er
-                och personalen. Om ert uppdrag avbryts pga av att reglerna inte
-                har följts har ni inte rätt till att kräva återbetalning av er
-                bokning. Denna information kommer att stå i bekräftelsemailet.
-                <br />
-                <br />
-                Vår policy är enkel, ALLA ska känna sig välkomna, och INGEN
-                skall diskrimineras.
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-dark" data-bs-dismiss="modal">
-                  Stäng
-                </button>
+          <div class="modal fade" id="modal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">Regler och Policy</div>
+                <div class="modal-body">
+                  Vi har en del regler som man ska förhålla sig till för allas
+                  trevnad och säkerhet.
+                  <br />
+                  <br />
+                  <ul>
+                    <li>18 årsgräns för alla heists hos oss</li>
+                    <li>
+                      Ert heists är övervakat av en supervisor som har
+                      direktkontakt med era hjälmar. Om ni får ett direktiv
+                      måste ni alltid följa det.
+                    </li>
+                    <li>
+                      Från det att ni går in i banken fram tills att ni är klara
+                      MÅSTE skyddsutrustningen alltid bäras korrekt.
+                    </li>
+                    <li>Vi har nolltolerans för hat och fysiskt våld.</li>
+                    <li>
+                      När man har blivit träffad måste man högt och tydligt
+                      skrika TRÄFF och räcka upp den hand som vapnet hålls i. Då
+                      är du “död” och måste direkt lämna banken till angiven
+                      plats.
+                    </li>
+                    <li>Man får inte fortsätta skjuta någon som är “död”.</li>
+                  </ul>
+                  Om någon av dessa regler bryts har vår personal rätt att
+                  avbryta ert uppdrag, då dessa kan leda till en direkt fara för
+                  både er och personalen. Om ert uppdrag avbryts pga av att
+                  reglerna inte har följts har ni inte rätt till att kräva
+                  återbetalning av er bokning. Denna information kommer att stå
+                  i bekräftelsemailet.
+                  <br />
+                  <br />
+                  Vår policy är enkel, ALLA ska känna sig välkomna, och INGEN
+                  skall diskrimineras.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-dismiss="modal">
+                    Stäng
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -273,6 +285,7 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
 <!-- Validering är ok, dock mycket info pga Prettier. Vi har arbetat framförallt med
